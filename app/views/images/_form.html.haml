@@ -1,0 +1,9 @@
+= simple_form_for @image, :html => {:multipart => true} do |f|
+  = render :partial => 'shared/errors', :object => @image.errors
+
+  .field
+    = f.input :file, :as => :file
+  .field
+    = f.hidden_field :gallery_id, :value => params[:gallery_id]
+  .actions
+    = f.submit 'Save'

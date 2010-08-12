@@ -1,0 +1,6 @@
+%tr
+  %td= gallery.name
+  %td= link_to 'images', gallery_images_path(gallery)
+  %td= link_to 'Show', gallery
+  %td= link_to 'Edit', edit_gallery_path(gallery) unless current_user.nil?
+  %td= link_to 'Destroy', gallery, :confirm => 'Are you sure?', :method => :delete unless current_user.nil?

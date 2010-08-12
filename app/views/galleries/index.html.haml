@@ -1,0 +1,13 @@
+%div{:class => 'span-24 last'}
+  %h1 Listing galleries
+  %table
+    %tr
+      %th='Gallery name'
+      %th='Images'
+      %th='Show'
+      %th='Delete' unless current_user.nil?
+    = render :partial => @galleries
+  %br/
+  = will_paginate @galleries
+  %br/
+  = link_to 'New Gallery', new_gallery_path unless current_user.nil?

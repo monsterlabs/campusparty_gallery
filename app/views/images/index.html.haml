@@ -1,0 +1,22 @@
+%h1 Listing images
+
+%table
+  %tr
+    %th File
+    %th Gallery
+    %th
+    %th
+    %th
+
+  = render :partial => @images
+
+%br
+  = will_paginate @images
+%br
+
+- unless current_user.nil?
+  = link_to 'New image', new_gallery_image_path
+  \|
+
+= link_to 'Back', galleries_path unless current_user.nil?
+

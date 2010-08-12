@@ -1,0 +1,5 @@
+%div{:id => 'session'}
+  - unless current_user.nil?
+    = link_to 'Exit', destroy_user_session_path
+  - else
+    = link_to 'Enter', new_user_session_path

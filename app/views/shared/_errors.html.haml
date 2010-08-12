@@ -1,0 +1,8 @@
+- if errors.any?
+  #error_explanation
+    %h2
+      = pluralize(errors.count, "error")
+      prohibited this gallery from being saved:
+    %ul
+      - errors.full_messages.each do |msg|
+        %li= msg

@@ -1,0 +1,8 @@
+= simple_form_for(@gallery) do |f|
+  = render :partial => "shared/errors", :object => @gallery.errors
+  .field
+    = f.input :name
+  .field
+    = f.input :description
+  .actions
+    = f.submit

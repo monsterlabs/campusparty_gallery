@@ -1,0 +1,10 @@
+%p
+  %b File:
+  = image_tag @image.file.url
+%p
+  %b Gallery:
+  = @image.gallery.name
+- unless current_user.nil?
+  = link_to 'Edit', edit_image_path(@image)
+  \|
+= link_to 'Back', gallery_images_path(@image.gallery)

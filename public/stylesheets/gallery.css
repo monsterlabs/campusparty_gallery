@@ -1,0 +1,50 @@
+/* line 1, ../../app/sass/gallery.sass */
+#gallery {
+  border: 1px solid black;
+  padding: 0px;
+}
+/* line 5, ../../app/sass/gallery.sass */
+#gallery #title {
+  background: #6fb8d6;
+  border-bottom: 1px solid black;
+  padding-top: 5px;
+  height: 36px;
+  margin-right: 0px;
+  border-right: 1px solid black;
+}
+/* line 13, ../../app/sass/gallery.sass */
+#gallery #form {
+  background: #6fb8d6;
+  border-bottom: 1px solid black;
+  padding-top: 5px;
+  padding-right: 9px;
+  height: 36px;
+}
+/* line 20, ../../app/sass/gallery.sass */
+#gallery #images {
+  margin-right: 0px;
+  padding-top: 5px;
+  border-right: 1px solid black;
+}
+
+/* line 25, ../../app/sass/gallery.sass */
+.thumb {
+  padding: 5px;
+  margin: 8px;
+  display: inline-block;
+  float: left;
+}
+/* line 31, ../../app/sass/gallery.sass */
+.thumb .actions {
+  padding-top: 2px;
+  text-align: center;
+}
+/* line 35, ../../app/sass/gallery.sass */
+.thumb .actions .action {
+  width: 16px;
+  cursor: pointer;
+  padding: 2px;
+  margin: 3px;
+  display: inline-block;
+  float: left;
+}

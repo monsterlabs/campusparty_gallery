@@ -1,0 +1,6 @@
+%tr
+  %td= image_tag image.file.url(:thumb)
+  %td= image.gallery.name
+  %td= link_to 'Show', image
+  %td= link_to 'Edit', edit_image_path(image) unless current_user.nil?
+  %td= link_to 'Destroy', image, :confirm => 'Are you sure?', :method => :delete unless current_user.nil?

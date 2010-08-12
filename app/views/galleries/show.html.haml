@@ -1,0 +1,8 @@
+%p#notice= notice
+= show_for @gallery do |a|
+  = a.attribute :name
+  = a.attribute :description
+- unless current_user.nil?
+  = link_to 'Edit', edit_gallery_path(@gallery)
+  \|
+\#{link_to 'Back', galleries_path}
