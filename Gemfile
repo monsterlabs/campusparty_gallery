@@ -1,23 +1,23 @@
 source :gemcutter
 
 # Bundle edge Rails instead:
-gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'rails', "3.0.0.rc"
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
 # Use unicorn as the web server
 gem 'unicorn'
 
-gem "simple_form", :git => 'git://github.com/plataformatec/simple_form.git'
-gem "show_for", :git => "http://github.com/plataformatec/show_for.git", :branch => 'master'
+gem "simple_form", "1.2.2"
+gem "show_for", "0.2.3"
 gem "will_paginate", "3.0.pre"
 
 gem "haml", "3.0.15"
 
-gem "carrierwave", "0.5.0.beta2", :git => "git://github.com/jnicklas/carrierwave.git", :branch => 'master'
+gem "carrierwave", "0.5.0.beta2"
 gem "rmagick"
 
-gem "devise", :git => 'git://github.com/plataformatec/devise.git', :branch => 'master'
+gem "devise", '1.1.1'
 
 gem "compass", "0.10.2"
 
