@@ -1,5 +1,7 @@
 class ImagesController < ApplicationController
   respond_to :html
+  skip_before_filter :authenticate_user!, :only => [:index, :show ]
+  
   # GET /images
   # GET /images.xml
   def index
