@@ -1,0 +1,23 @@
+== Description
+
+Web application for showing images in galleries with rails 3. Example in CP Mexico 2010.
+
+== Requirements
+
+bundler >= 1.0.0.rc.3 
+
+$ gem install bundler --pre
+
+== How to test this application
+
+To start the standalone server for testing this application run:
+
+  $ bundle install vendor/bundle 
+
+  $ bundle exec rails server
+
+Open http://localhost:3000 and login with:
+
+  email: user@test.com
+
+  password: 123456
