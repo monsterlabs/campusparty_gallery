@@ -1,7 +1,7 @@
 source :gemcutter
 
 # Bundle edge Rails instead:
-gem 'rails', "3.0.0.rc"
+gem 'rails', "3.0.0"
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
@@ -10,16 +10,16 @@ gem 'unicorn'
 
 gem "simple_form", "1.2.2"
 gem "show_for", "0.2.3"
-gem "will_paginate", "3.0.pre"
+gem "will_paginate", "3.0.pre2"
 
-gem "haml", "3.0.15"
+gem "haml", "3.0.21"
 
-gem "carrierwave", "0.5.0.beta2"
+gem "carrierwave", "0.5.0"
 gem "rmagick"
 
-gem "devise", '1.1.1'
+gem "devise", '1.1.3'
 
-gem "compass", "0.10.2"
+gem "compass", "0.10.5"
 
 group :development do
   gem "rails3-generators", :require => "rails/generators"

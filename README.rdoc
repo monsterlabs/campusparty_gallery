@@ -4,9 +4,9 @@ Web application for showing images in galleries with rails 3. Example in CP Mexi
 
 == Requirements
 
-bundler >= 1.0.0.rc.3 
+bundler >= 1.0.0
 
-$ gem install bundler --pre
+$ gem install bundler
 
 == How to test this application
 
